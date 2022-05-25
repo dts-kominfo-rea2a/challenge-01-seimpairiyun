@@ -9,10 +9,10 @@ firstUser.name = "Monica";
 firstUser.gender = "female";
 firstUser.age = 17;
 firstUser.email = "monica@dingdong.com";
-firstUser.favoriteColor = "Yellow, Pink, White, Purple";
+firstUser.favoriteColor = new Set(["Yellow", "Pink", "White", "Purple"]);
 firstUser.isHavePet = "Yes";
-firstUser.education = [];
 
+firstUser.education = [];
 firstUser.education.push(
   {
     name: "SD 01",
@@ -24,12 +24,13 @@ firstUser.education.push(
     city: "Jakarta",
     graduate: "2019",
   },
-  { name: "SMA 03", city: "Tangerang" }
+  {
+    name: "SMA 03",
+    city: "Tangerang",
+  }
 );
 
-firstUser.favoriteRestaurant = new Set();
-
-[
+firstUser.favoriteRestaurant = new Set([
   "Bento",
   "Sushi",
   "Pancake",
@@ -41,19 +42,17 @@ firstUser.favoriteRestaurant = new Set();
   "Tteok",
   "Sushi",
   "Sushi",
-].forEach((n) => {
-  firstUser.favoriteRestaurant.add(n);
-});
+]);
 
 // ! SECOND USER
 secondUser.name = "Wendy";
 secondUser.gender = "male";
 secondUser.age = 23;
 secondUser.email = "wendy@dingdong.com";
-secondUser.favoriteColor = "Blue, Black, Grey";
+secondUser.favoriteColor = new Set(["Blue", "Black", "Grey"]);
 secondUser.isHavePet = "No";
-secondUser.education = [];
 
+secondUser.education = [];
 secondUser.education.push(
   {
     name: "SD 02",
@@ -65,13 +64,18 @@ secondUser.education.push(
     city: "Bogor",
     graduate: 2013,
   },
-  { name: "SMA 01", city: "Surabaya", graduate: 2016 },
-  { name: "Universitas Maju", city: "Tangerang" }
+  {
+    name: "SMA 01",
+    city: "Surabaya",
+    graduate: 2016,
+  },
+  {
+    name: "Universitas Maju",
+    city: "Tangerang",
+  }
 );
 
-secondUser.favoriteRestaurant = new Set();
-
-[
+secondUser.favoriteRestaurant = new Set([
   "Tempura",
   "Bento",
   "Sushi",
@@ -81,9 +85,7 @@ secondUser.favoriteRestaurant = new Set();
   "Geprek",
   "Pancake",
   "Eggy",
-].forEach((n) => {
-  secondUser.favoriteRestaurant.add(n);
-});
+]);
 
 //
 //
